@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-mastery",
+  "version": "1.0.0",
+  "description": "The Ultimate NodeJs Practice Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srinibash",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}
