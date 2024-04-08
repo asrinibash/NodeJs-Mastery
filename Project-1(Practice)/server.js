@@ -1,6 +1,3 @@
-function add(a, b){
-    return a + b;
-}
+console.log("Node is the runtime environment for javascript");
 
-var sum=add(6,2);
-console.log(sum);
+//We can set our custom script command for running our command --> check out package.json
