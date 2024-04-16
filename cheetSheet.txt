@@ -1,0 +1,1 @@
+1. "https://www.google.com/search'?'q=parameters&oq" --> after question mark we written the parameters of the url
