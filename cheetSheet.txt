@@ -1,1 +1,22 @@
 1. "https://www.google.com/search'?'q=parameters&oq" --> after question mark we written the parameters of the url
+
+
+
+--> Versioning Nodejs***
+
+version: "^4.8.3"
+
+1st part -> 4
+2nd part -> 8
+3rd part -> 3
+
+// 3rd part (Last Part) -> Minor Fixes (Optional for update minor typo fixes)
+
+//2nd part -> Recommended bug fixes (Security fixes or some new features added)
+
+//1st part -> major upgrade or Breaking upgrade
+
+-> '^' -> Install minor and Recommended updates Automatecally (Only first bit locked)
+--> if the symbol is not there we need to manually upgrade thr minor and Recommended updates
+
+-> "~ 4.18.7"-> this symbol allow us only upgrade 3rd part minor fixes (First 2 bit are locked)

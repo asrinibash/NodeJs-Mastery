@@ -1,0 +1,17 @@
+REST API - JSON
+
+GET/users -lIST users in HTML Document Render for browser
+GET/api/users-List All the users for mobile devices           //this is called hybride APIs
+
+GET/api/users/1-GET the users with id 1
+GET/users/2-GET the users with id 2
+
+-> Dynamic Path Parameters
+GET (/api/users/:id)
+:id -> means its a varible it will be dynamic
+
+POST/users - Create new users
+
+PATCH/users/1 - Edit the user with ID 1
+
+DELETE/users/id - Delete the user with ID 1
