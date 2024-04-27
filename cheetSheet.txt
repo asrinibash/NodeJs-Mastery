@@ -20,3 +20,26 @@ version: "^4.8.3"
 --> if the symbol is not there we need to manually upgrade thr minor and Recommended updates
 
 -> "~ 4.18.7"-> this symbol allow us only upgrade 3rd part minor fixes (First 2 bit are locked)
+
+
+
+//*Http headers:
+-> Http hearders are an important part of the API request and response as they represented the metadata 
+   associated with the API requst and response.
+-> Headers carry information about the Request and respose body.
+
+//Http Status code :
+1. imformation response - (100-199)
+2. Successfull response - (200-299)
+3. Redirection messages - (300-399)
+4. Client error response- (400-499)
+5. Server Error response- (500-599)
+
+
+//MongoDB Cheetsheet :
+-> MongoDB is a No-sql document based database.
+-> Support for Aggregation types.
+-> works on BSON format 
+// MongoDB terms: 
+ 1. tables - collections
+ 2. entries - document
