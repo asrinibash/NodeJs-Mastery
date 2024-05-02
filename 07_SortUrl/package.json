@@ -1,5 +1,5 @@
 {
-  "name": "06_mongodb",
+  "name": "07_sorturl",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2",
-    "mongoose": "^8.3.2",
-    "nodemon": "^3.1.0"
-  }
+  "license": "ISC"
 }

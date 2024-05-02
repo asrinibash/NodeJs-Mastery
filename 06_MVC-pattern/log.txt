@@ -1,0 +1,13 @@
+
+1714645682785 : ::1 : GET : /api/users
+1714645699415 : ::1 : GET : /api/users
+1714645910938 : ::1 : POST : /api/users
+1714645922133 : ::1 : POST : /api/users
+1714645979308 : ::1 : POST : /api/users
+1714646006278 : ::1 : POST : /api/users
+1714646013043 : ::1 : GET : /api/users
+1714646041216 : ::1 : GET : /api/users/66336ba282fbab738a58b7d0
+1714646047926 : ::1 : DELETE : /api/users/66336ba282fbab738a58b7d0
+1714646053154 : ::1 : GET : /api/users
+1714646069680 : ::1 : PATCH : /api/users/66336bdb8c8504acd9a57754
+1714646073864 : ::1 : GET : /api/users
