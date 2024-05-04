@@ -43,3 +43,9 @@ version: "^4.8.3"
 // MongoDB terms: 
  1. tables - collections
  2. entries - document
+
+
+ //for ServerSide rendering dependencies are:
+  1. EJS
+  2. PUG 
+  3. Handlebars
