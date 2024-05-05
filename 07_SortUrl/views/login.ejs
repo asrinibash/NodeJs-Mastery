@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #212121;
+            color: #fff;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="/user/login" method="post">
+        <label for="email">email</label>
+        <label><input type="text" required name="email"></label>
+        <label for="password">password</label>
+        <label><input type="text" required name="password"></label>
+        <button type="submit">SignUp</button>
+    </form>
+
+</body>
+
+</html>
