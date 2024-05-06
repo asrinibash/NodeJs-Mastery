@@ -1,21 +1,43 @@
 const { getUser } = require("../services/auth");
 
-async function restrictToLoggedInUserOnly(req, res, next) {
-  const userUid = req.cookies.uid;
-  if (!userUid) return res.redirect("/login");
-  const user = getUser(userUid);
+function checkForAuthentication(req, res, next) {
+  const authorizationHeaderValue = req.headers("authorization");
+  req.user = null;
 
-  if (!user) return res.redirect("/login");
-  req.user = user;
-  next();
-}
-async function checkAuth(req, res, next) {
-  const userUid = req.cookies.uid;
-  const user = getUser(userUid);
+  if (
+    !authorizationHeaderValue ||
+    !authorizationHeaderValue.startsWith("Bearer")
+  )
+    return next();
 
-  req.user = user;
-  next();
+  const token = userUid.split("Bearer ")[1];
+  req.user = getUser(token);
+  return next();
 }
+
+// async function restrictToLoggedInUserOnly(req, res, next) {
+//   // const userUid = req.cookies.uid;  // for cookies based authentication
+//   const userUid = req.headers["authorization"];
+//   // const user = getUser(userUid);
+
+//   if (!userUid) return res.redirect("/login");
+//   const token = userUid.split("Bearer ")[1]; //the token split with Bearer and token value
+//   const user = getUser(token);
+
+//   if (!user) return res.redirect("/login");
+//   req.user = user;
+//   next();
+// }
+// async function checkAuth(req, res, next) {
+//   // const userUid = req.cookies.uid;
+//   console.log(req.headers);
+//   const userUid=req.headers["authorization"];
+//   const token = userUid.split("Bearer ")[1];
+//   const user = getUser(token);
+
+//   req.user = user;
+//   next();
+// }
 
 module.exports = {
   restrictToLoggedInUserOnly,

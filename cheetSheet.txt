@@ -1,3 +1,4 @@
+
 1. "https://www.google.com/search'?'q=parameters&oq" --> after question mark we written the parameters of the url
 
 
@@ -49,3 +50,10 @@ version: "^4.8.3"
   1. EJS
   2. PUG 
   3. Handlebars
+
+//for session based authentication- why would not we use to store sessions on database -2 point
+->if we store the session in database then every time we need to fetch a query to database that the use is valid or not...it makes our APIs slow increses the time to 200ms to 300ms
+->it will increses the read operations of the projects then it leads to increases the build size
+
+//Cookies
+-cookies are domain specific

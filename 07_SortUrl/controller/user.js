@@ -22,10 +22,11 @@ async function handleUserLogin(req, res) {
     });
   }
 
-  const sessionId = uuidv4();
-  setUser(sessionId, user);
-  res.cookie("uid", sessionId);
-  return res.redirect("/");
+  // const sessionId = uuidv4();
+  // setUser(sessionId, user);   this is for statefull authentication
+  const token = setUser(user); //for stateless
+  // res.cookie("uid", token);  //for cookie based authentication
+  return res.json({ token });
 }
 
 module.exports = {
